@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>
+Simple SignUp form
+</title>
+<script>
+function go()
+{
+var a = document.getElementById("pass").value;
+var b = document.getElementById("confirm").value;
+var info= [];
+if (a!=b)
+{
+window.alert("passwords do not match");
+}
+
+
+if (a==b)
+{
+
+var name = document.getElementById("name").value;
+var surname = document.getElementById("surname").value;
+var age = document.getElementById("age").value;
+var email = document.getElementById("email").value;
+var pass = document.getElementById("pass").value;
+var confirm = document.getElementById("confirm").value;
+
+
+info=[name, surname, age, email, pass, confirm];
+
+window.alert("success");
+}
+
+}
+</script>
+
+
+</head>
+
+<body>
+<form>
+<table align=center>
+
+<tr>
+<td>Name</td>
+<td><input type="text" id="name"></td>
+</tr>
+
+
+
+<tr>
+<td>Surname</td>
+<td><input type="text" id="surname"></td>
+</tr>
+
+
+<tr>
+<td>Age</td>
+<td><input type="number" id="age"></td>
+</tr>
+
+
+<tr>
+<td>Email</td>
+<td><input type="text" id="email"></td>
+</tr>
+
+
+<tr>
+<td>Password</td>
+<td><input type="password" id="pass"></td>
+</tr>
+
+<tr>
+<td>Confirm Password</td>
+<td><input type="password" id="confirm"></td>
+</tr>
+
+
+<tr>
+<td colspan = 2><center><input type="button" value="Sign Up" onclick="go()"></center>
+</tr>
+
+</table>
+</form>
+
+</body>
+
+</html>
